@@ -1,7 +1,9 @@
+import React from "react";
+import MainRoutes from "./Routes.tsx";
 function App() {
   return (
     <div className="App">
-      <h1>SV Delux PG</h1>
+      <MainRoutes />
     </div>
   );
 }
