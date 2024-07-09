@@ -1,2 +1,2 @@
 # PG
-Freelance web site for SV Delux PG
+Freelance web site for SV Deluxe PG
