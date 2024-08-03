@@ -12,8 +12,13 @@
   box-shadow: none !important;
 }
 .logo {
-  background-image: url(../src/assets/logo1.jpg);
+  background-image: url(../src/assets/svlogo.png);
   width: 100px;
-  height: 80px;
+  height: 90px;
   background-size: cover;
+  transition: transform 0.5s ease-in-out;
+}
+.logo:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
 }

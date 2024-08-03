@@ -3,10 +3,10 @@ import Amenities from "./Amenities";
 import Price from "./Price";
 import Contact from "./Contact";
 
-const header = () => {
+const Header = () => {
   return (
     <>
-      {/* <h1>SV Delux PG</h1> */}
+      {/* <h1>SV Delux PG </h1>  */}
       <Amenities />
       <Price />
       <Contact />
@@ -14,4 +14,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

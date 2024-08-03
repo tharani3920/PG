@@ -5,7 +5,6 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -14,7 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import logo from "../assets/logo1.jpg";
 import { Link } from "react-router-dom";
-
+import { FiMenu } from "react-icons/fi";
 const pages = ["Amenities", "Pricing", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -59,21 +58,20 @@ function ResponsiveAppBar() {
             component="a"
             href="/"
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", sm: "flex", md: "flex" },
               fontWeight: 700,
               fontSize: "30px",
               letterSpacing: ".2rem",
               color: "inherit",
               textDecoration: "none",
-              marginLeft: "40px",
             }}
           >
-            SV DELUXE
+            DELUXE
           </Typography>
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", sm: "flex", md: "flex" },
               justifyContent: "flex-end",
             }}
           >
@@ -103,7 +101,7 @@ function ResponsiveAppBar() {
             component="a"
             href="/"
             sx={{
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", sm: "none", md: "none" },
               flexGrow: 1,
               fontWeight: 700,
               letterSpacing: ".1rem",
@@ -111,12 +109,13 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            SV Deluxe
+            Deluxe
           </Typography>
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", sm: "none", md: "none" },
+              justifyContent: "flex-end",
             }}
           >
             <IconButton
@@ -125,9 +124,8 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="black"
             >
-              <MenuIcon />
+              <FiMenu style={{ color: "black" }} />
             </IconButton>
             <Menu
               id="menu-appbar"

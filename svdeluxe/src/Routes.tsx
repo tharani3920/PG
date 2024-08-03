@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./component/header.jsx";
+import Header from "./component/Header.jsx";
 import ResponsiveAppBar from "./component/ResponsiveAppBar.js";
 import Amenities from "./component/Amenities.jsx";
 import Price from "./component/Price.jsx";
