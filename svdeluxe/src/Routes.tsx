@@ -11,7 +11,7 @@ const MainRoutes = () => {
       {/* <Header /> */}
       <ResponsiveAppBar />
       <Routes>
-        <Route path="/" element={<Header />} />
+        {/* <Route path="/" element={<Header />} /> */}
         <Route path="/Amenities" element={<Amenities />} />
         <Route path="/Pricing" element={<Price />} />
         <Route path="/Contact" element={<Contact />} />

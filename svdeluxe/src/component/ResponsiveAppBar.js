@@ -52,6 +52,7 @@ function ResponsiveAppBar() {
           >
             {/* <img src={logo} alt="logo-img" width="70px" height="80px" /> */}
           </span>
+
           <Typography
             variant="h6"
             noWrap
@@ -66,7 +67,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            DELUXE
+            DELUXE PG
           </Typography>
           <Box
             sx={{
@@ -109,7 +110,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            Deluxe
+            Deluxe PG
           </Typography>
           <Box
             sx={{

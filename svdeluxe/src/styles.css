@@ -7,18 +7,30 @@
   font-family: "Poetsen One", sans-serif !important;
 }
 .app-bar {
-  background-color: transparent !important;
+  background-color: #f8f8ff !important;
   color: blue !important ;
   box-shadow: none !important;
+  /* height: 100px; */
 }
 .logo {
-  background-image: url(../src/assets/svlogo.png);
-  width: 100px;
-  height: 90px;
-  background-size: cover;
+  background-image: url(../src/assets/svpg1.png);
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 5px 5px;
   transition: transform 0.5s ease-in-out;
 }
 .logo:hover {
   transform: rotate(360deg);
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
 }
